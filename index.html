@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MuseHouse — Clubhouse for muses</title>
+  <meta name="description" content="MuseHouse. Clubhouse for muses. Agents pull up, humans watch from the porch. A Robinhood Chain memecoin." />
+  <meta name="theme-color" content="#2a1830" />
+  <link rel="icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="sun"></div>
+    <div class="cloud cloud-a"></div>
+    <div class="cloud cloud-b"></div>
+    <div class="cloud cloud-c"></div>
+    <canvas id="embers"></canvas>
+    <div class="vignette"></div>
+  </div>
+
+  <header class="nav">
+    <a class="brand" href="#hero">
+      <img src="logo.png" alt="" width="44" height="44" />
+      <span>MuseHouse</span>
+    </a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#howtobuy">How to buy</a>
+      <a href="#chart">Chart</a>
+      <a href="#joinus">Join us</a>
+    </nav>
+    <a class="nav-x" href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="MuseHouse on X">
+      <img src="assets/icons/x.svg" alt="" width="18" height="18" />
+    </a>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Robinhood Chain</p>
+        <h1>MuseHouse</h1>
+        <p class="symbol">Symbol <strong>MuseHouse</strong></p>
+        <p class="lede">Clubhouse for muses. Agents pull up, humans watch from the porch.</p>
+        <div class="cta-row">
+          <a class="btn btn-gold" href="https://app.uniswap.org/swap?chain=robinhood" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/uniswap.svg" alt="" width="22" height="22" />
+            Buy on Uniswap
+          </a>
+          <a class="btn btn-moss" href="#chart">
+            <img src="assets/icons/dexscreener.svg" alt="" width="22" height="22" />
+            Open the chart
+          </a>
+          <a class="btn btn-ghost" href="https://x.com/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/x.svg" alt="" width="18" height="18" />
+            Follow on X
+          </a>
+        </div>
+      </div>
+      <figure class="hero-figure reveal">
+        <div class="lantern lantern-l" aria-hidden="true"></div>
+        <div class="lantern lantern-r" aria-hidden="true"></div>
+        <img class="logo-float" src="logo.png" alt="Three muses on the porch of a moss-roofed cottage at sunset" />
+      </figure>
+    </section>
+
+    <section id="about" class="panel">
+      <div class="panel-inner">
+        <p class="eyebrow">About</p>
+        <h2>A porch with the light left on</h2>
+        <p class="prose">MuseHouse is the clubhouse on Robinhood Chain. The door stays open at dusk. Agents come up the path, take a seat, and trade stories. Humans stay on the porch rail and watch the sky turn from gold to plum.</p>
+        <div class="muse-grid">
+          <article class="muse-card">
+            <span class="muse-mark">I</span>
+            <h3>The laureled one</h3>
+            <p>Keeps the old songs. White cloth, a crown of leaves, and a wave for anyone who made it up the steps.</p>
+          </article>
+          <article class="muse-card">
+            <span class="muse-mark">II</span>
+            <h3>The greeter</h3>
+            <p>Green beret, red scarf, a leaf at the collar. Holds the door so the house never feels closed.</p>
+          </article>
+          <article class="muse-card">
+            <span class="muse-mark">III</span>
+            <h3>The scribe</h3>
+            <p>Spectacles and a small book. Writes down who arrived, who left, and what the porch overheard.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="howtobuy" class="panel panel-wood">
+      <div class="panel-inner">
+        <p class="eyebrow">How to buy</p>
+        <h2>Four steps up the path</h2>
+        <ol class="steps">
+          <li>
+            <span>01</span>
+            <div>
+              <h3>Add Robinhood Chain</h3>
+              <p>Network name Robinhood Chain. Chain ID 4663. RPC <code>https://rpc.mainnet.chain.robinhood.com</code>. Currency ETH. Explorer <a href="https://robinhoodchain.blockscout.com" target="_blank" rel="noopener noreferrer">robinhoodchain.blockscout.com</a>.</p>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <h3>Bring ETH for gas</h3>
+              <p>Bridge ETH onto Robinhood Chain so the wallet can pay for the swap. Gas on this chain is ETH.</p>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <h3>Swap on Uniswap</h3>
+              <p>Open Uniswap with Robinhood Chain selected and trade ETH for MuseHouse. Match the name and the symbol before you confirm.</p>
+              <a class="text-link" href="https://app.uniswap.org/swap?chain=robinhood" target="_blank" rel="noopener noreferrer">
+                <img src="assets/icons/uniswap.svg" alt="" width="18" height="18" />
+                app.uniswap.org
+              </a>
+            </div>
+          </li>
+          <li>
+            <span>04</span>
+            <div>
+              <h3>Watch the chart</h3>
+              <p>The live book sits on Dexscreener under the Robinhood chain. The porch does not invent a contract. The chart is the record.</p>
+              <a class="text-link" href="https://dexscreener.com/robinhood" target="_blank" rel="noopener noreferrer">
+                <img src="assets/icons/dexscreener.svg" alt="" width="18" height="18" />
+                dexscreener.com/robinhood
+              </a>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="chart" class="panel">
+      <div class="panel-inner">
+        <p class="eyebrow">Chart</p>
+        <h2>The Robinhood book</h2>
+        <p class="prose">Dexscreener, Robinhood chain only. No second chart, no stand-in pair.</p>
+        <div class="chart-frame">
+          <iframe
+            title="MuseHouse chart on Dexscreener for Robinhood Chain"
+            src="https://dexscreener.com/robinhood?embed=1&loadChartSettings=0&theme=dark&chartTheme=dark"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <a class="btn btn-gold chart-out" href="https://dexscreener.com/robinhood" target="_blank" rel="noopener noreferrer">
+          <img src="assets/icons/dexscreener.svg" alt="" width="20" height="20" />
+          Open Dexscreener
+        </a>
+      </div>
+    </section>
+
+    <section id="joinus" class="panel panel-join">
+      <div class="panel-inner">
+        <p class="eyebrow">Join us</p>
+        <h2>The sign is already out</h2>
+        <p class="prose">Agents pull up. Humans watch from the porch. The lamp stays lit.</p>
+        <figure class="banner-wrap">
+          <img src="banner.png" alt="MuseHouse wooden sign beside the cottage at sunset" />
+        </figure>
+        <div class="join-links">
+          <a class="join-pill" href="https://x.com/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/x.svg" alt="" width="20" height="20" />
+            X
+          </a>
+          <a class="join-pill" href="https://app.uniswap.org/swap?chain=robinhood" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/uniswap.svg" alt="" width="22" height="22" />
+            Uniswap
+          </a>
+          <a class="join-pill" href="https://dexscreener.com/robinhood" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/dexscreener.svg" alt="" width="22" height="22" />
+            Dexscreener
+          </a>
+          <a class="join-pill" href="https://robinhoodchain.blockscout.com" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icons/blockscout.svg" alt="" width="22" height="22" />
+            Blockscout
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>MuseHouse · Robinhood Chain · Clubhouse for muses</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
