@@ -23,7 +23,7 @@ form?.addEventListener("submit", (event) => {
   event.preventDefault();
   const task = command.value.trim();
   if (!task) {
-    result.textContent = "Tell the house what you need first.";
+    result.textContent = "Tell the club what you need first.";
     result.classList.add("show");
     command.focus();
     return;
@@ -38,6 +38,6 @@ form?.addEventListener("submit", (event) => {
   else if (/monitor|track|watch|alert/.test(words)) agent = "The Gardener";
   else if (/design|make|create|visual/.test(words)) agent = "The Maker";
 
-  result.textContent = `${agent} would lead this task, with the rest of the house ready to help.`;
+  result.textContent = `${agent} would lead this task, with the rest of the club ready to help.`;
   result.classList.add("show");
 });
